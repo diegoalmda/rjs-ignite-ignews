@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Post, { getStaticProps } from '../../pages/posts/preview/[slug]';
 import { stripe } from '../../services/stripe'
 import { mocked } from 'ts-jest/cli'
-import { useSession } from 'next-auth/client';
+import { useSession } from 'next-auth/react';
 import { getPrismicClient } from '../../services/prismic'
 import { useRouter } from 'next/router';
 
@@ -10,7 +10,7 @@ jest.mock('../../services/stripe')
 
 const post = { slug: 'my-new-post', title: 'My New Post', content: '<p>Post excerpt</p>', updatedAt: '10 de Abril' };
 
-jest.mock('next-auth/client')
+jest.mock('next-auth/react')
 jest.mock('next/router')
 jest.mock('../../services/prismic')
 

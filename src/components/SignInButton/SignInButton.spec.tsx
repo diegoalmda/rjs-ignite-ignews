@@ -1,9 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import { mocked } from 'ts-jest/cli'
-import { useSession } from 'next-auth/client'
 import { SignInButton } from '.'
 
-jest.mock('next-auth/client')
+jest.mock('next-auth/react')
 
 describe("SignInButton component", () => {
 

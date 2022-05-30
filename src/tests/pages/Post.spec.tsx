@@ -2,14 +2,14 @@ import { render, screen } from '@testing-library/react';
 import Post, { getServerSideProps } from '../../pages/posts/[slug]';
 import { stripe } from '../../services/stripe'
 import { mocked } from 'ts-jest/cli'
-import { getSession } from 'next-auth/client';
+import { getSession } from 'next-auth/react';
 import { getPrismicClient } from '../../services/prismic'
 
 jest.mock('../../services/stripe')
 
 const post = { slug: 'my-new-post', title: 'My New Post', content: '<p>Post excerpt</p>', updatedAt: '10 de Abril' };
 
-jest.mock('next-auth/client')
+jest.mock('next-auth/react')
 jest.mock('../../services/prismic')
 
 describe('Post page', () => {
