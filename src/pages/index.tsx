@@ -13,7 +13,7 @@ interface HomeProps {
   }
 }
 
-export default function Home({ product = null } : HomeProps) {
+export default function Home({ product = { priceId: "", amount: "" } } : HomeProps) {
   
   return (
     <>
