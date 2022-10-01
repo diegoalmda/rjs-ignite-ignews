@@ -57,5 +57,7 @@ $ yarn install
 $ yarn dev
 # The server will initialize in the <http://localhost:3000>
 ```
+Testar o projeto em funcionamento -> [IGNews](https://ignews-challenge-diegoalmda.vercel.app/)
+
 
 Feito por Diego Almeida :wave: #TrilhaIgnite #Rocketseat 🚀
